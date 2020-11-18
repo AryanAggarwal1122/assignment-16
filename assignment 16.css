@@ -1,0 +1,47 @@
+body{
+    text-align: center;
+    border: 40px groove;
+}
+div.one span{
+    font-family: cursive;
+    color: coral;
+}
+div.one div:last-child{
+    color: green;
+    font-weight: 600;
+    background-color:rgb(235, 255, 255) ;
+}
+div.two span{
+    font-size: 20px ;
+}
+div.two p:first-of-type{
+    color: red;
+    background-color: chartreuse;
+    font-weight: 700;
+}
+div.two em:only-of-type{
+    color: purple;
+    font-weight: 700;
+
+}
+div.two p:last-of-type{
+    color: red;
+}
+.three input:in-range{
+    background-color: yellowgreen;
+}
+.three input:out-of-range{
+    background-color:skyblue;
+}
+input:in-range+label::after{
+    content: 'correct guess ';
+}
+input:in-range+label::before{
+    content: 'yay ';
+}
+input:out-of-range+label::after{
+    content: 'wrong guess... you will be punished ';
+}
+input:out-of-range+label::before{
+    content: 'ishhhhhh............ ';
+}
